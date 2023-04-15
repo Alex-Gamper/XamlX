@@ -136,10 +136,10 @@ namespace XamlParserTests
             }, null);
         }
 
-        public static void SetAttachedProperty(ServiceProviderTestsClass target, string value)
-        {
+        //public static void SetAttachedProperty(ServiceProviderTestsClass target, string value)
+        //{
             
-        }
+        //}
         
         [Fact]
         public void ProvideValueTarget_Provides_Info_About_Properties()

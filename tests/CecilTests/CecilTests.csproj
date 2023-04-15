@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <Import Project="$(MSBuildThisFileDirectory)\..\Tests.Common.props" />
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp2.1;net47;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>net6.0</TargetFrameworks>
         <DefineConstants>CECIL;$(DefineConstants)</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
@@ -9,5 +9,14 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\..\src\XamlX.IL.Cecil\XamlX.IL.Cecil.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+      <PackageReference Update="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" />
+      <PackageReference Update="xunit" Version="2.4.2" />
+      <PackageReference Update="xunit.runner.visualstudio" Version="2.4.5">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 </Project>
